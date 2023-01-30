@@ -44,6 +44,7 @@ p{
   justify-content: space-between;
   align-items: center;
   column-gap: 150px;
+  margin-bottom: 115px;
 }
 .header__logo {
 }
@@ -108,4 +109,56 @@ p{
 }
 .btn__header:hover::after {
 	width: 100%;
+}
+.header__content {
+  margin-bottom: 145px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__inner-title {
+}
+.h1-text {
+  position: relative;
+  max-width: 386px;
+  margin-bottom: 40px;
+}
+.h1-text::after {
+  content: url("../img/header-light-bulb.png");
+  position: absolute;
+  top: 60px;
+  right: -150px;
+  overflow: hidden;
+}
+.p-text-header{
+  max-width: 525px;
+  margin-bottom: 60px;
+  font-size: 24px;
+  line-height: 36px;
+}
+.btn {
+  color: #fff;
+  background-color: var(--color-text2);
+}
+.btn:hover{
+  color: var(--color-text1);
+  background-color: var(--color-text3);
+  transform: translateY(-3px);
+  transition: all 0.5s ease;
+}
+.btn-header {
+  width: 438px;
+  height: 118px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  border-radius: 15px;
+}
+.header__inner-image {
+}
+.img {
+}
+.img-header {
 }
