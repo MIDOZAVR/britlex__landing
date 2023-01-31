@@ -5,6 +5,7 @@
   --color-text1: #000000;
   --color-text2: #263238;
   --color-text3: #8F95A5;
+  --color-bacgroung-items: #F5F5F5;
   --width-contaner:1370px;
   --pading-container: 15px;
 }
@@ -48,7 +49,7 @@ p{
 }
 .header__logo {
 }
-.logo {
+.logo{
   font-weight: 400;
   font-size: 36px;
   line-height: 54px;
@@ -56,6 +57,12 @@ p{
 .span__logo {
   color: var(--color-text1);
 }
+/* .span__logo:hover{
+  color: var(--color-text3);
+}
+.span__logo-next:hover{
+  color: var(--color-text1);
+} */
 .header__menu {
 }
 .nav__header {
@@ -156,9 +163,58 @@ p{
   line-height: 54px;
   border-radius: 15px;
 }
-.header__inner-image {
+.skills {
+  text-align: center;
+  margin-bottom: 250px;
 }
-.img {
+.h2-skills{
+  margin-bottom: 40px;
 }
-.img-header {
+.skills-writing img,
+.skills-reading img{
+  height: 200px;
+}
+.skills-speacking{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-area: speacking;
+}
+.skills-writing{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-area: writing;
+}
+.skills-reading{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-area: reading;
+}
+.skills-listening{
+  display: flex;
+  justify-content: space-between;
+  grid-area: listening;
+}
+.skills__grid {
+  display: grid;
+  grid-template-areas: "speacking writing reading" "speacking listening listening";
+  gap: 18px;
+  align-items: stretch;
+}
+.skills__grid-item {
+  padding: 25px;
+  text-align: left;
+  background: var(--color-bacgroung-items);
+  border-radius: 10px;
+}
+.p-text-skills{
+  margin-bottom: 30px;
+  max-width: 350px;
+}
+.btn-skills {
+  width: 230px;
+  height: 60px;
+  border-radius: 5px;
 }

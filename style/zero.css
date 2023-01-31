@@ -100,3 +100,9 @@ label {
 legend {
 	display: block;
 }
+.none{
+	display: none;
+}
+html{
+	scroll-behavior: smooth;
+}
