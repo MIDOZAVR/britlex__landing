@@ -218,3 +218,75 @@ p{
   height: 60px;
   border-radius: 5px;
 }
+.About_Us{
+  margin-bottom: 220px;
+}
+.about__container {
+  display: flex;
+  justify-content: space-between;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 635px;
+}
+.p-text-about {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.about__content-flex {
+  display: flex;
+  column-gap: 25px;
+  justify-content: space-between;
+  text-align: center;
+}
+.about__content-flex-item {
+  margin-bottom: 30px;
+}
+.about__img img {
+  max-width: 500px;
+}
+.Pricing {
+  margin-bottom: 250px;
+}
+.h2-text-pricing{
+  text-align: center;
+  margin-bottom: 45px;
+}
+.pricing__container {
+  display: flex;
+  column-gap: 40px;
+}
+.pricing-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 33%;
+}
+.pricing-item img{
+  max-width: 340px;
+}
+.p-text-pricing {
+  margin-bottom: 30px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  width: 240px;
+  height: 45px;
+  background: #EEEEEE;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.price-number {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+}
+.price:hover {
+  background-color: var(--color-bacgroung-items);
+}
