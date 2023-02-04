@@ -5,10 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Britlex</title>
 </head>
 <body>
-  <header class="header none">
+  <header class="header">
     <div class="container">
       <div class="header__items">
         <div class="header__logo">
@@ -20,8 +21,8 @@
               <a href="#!"><li class="nav-item">Home</li></a>
               <a href="#skills"><li class="nav-item">Skills</li></a>
               <a href="#About_Us"><li class="nav-item">About Us</li></a>
-              <a href="#!"><li class="nav-item">Pricing</li></a>
-              <a href="#!"><li class="nav-item">Contacts</li></a>
+              <a href="#Pricing"><li class="nav-item">Pricing</li></a>
+              <a href="#Contact"><li class="nav-item">Contacts</li></a>
             </ul>
           </nav>
         </div>
@@ -34,12 +35,12 @@
     <div class="header__content">
       <div class="container">
         <div class="header__inner">
-          <div class="header__inner-title">
+          <div data-aos="fade-right" class="header__inner-title">
             <h1 class="h1-text">Learn <br> Any Foreign Language</h1>
             <p class="p-text p-text-header">With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</p>
             <button class="btn btn-header">Get started</button>
           </div>
-          <div class="header__inner-image">
+          <div data-aos="fade-left" class="header__inner-image">
             <img src="./img/header-img.svg" alt="image" class="img img-header">
           </div>
         </div>
@@ -49,29 +50,29 @@
 
   <main>
 
-    <section id="skills" class="skills none">
+    <section id="skills" class="skills">
       <h2 class="h2-text h2-skills">Skills</h2>
       <div class="container">
         <div class="skills__grid">
-          <div class="skills__grid-item skills-speacking">
+          <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="skills__grid-item skills-speacking">
             <img src="./img/skills-speaking.svg" alt="speaking" class="img img-skills">
             <h3 class="h3-text">Speaking</h3>
             <p class="p-text p-text-skills">Improve your English skills and confidence. Live classes and interactive lessons online. 20% extra free for a limited time only <br><br> Learn English online and improve your skills through our high-quality courses and resources – all designed for adult language learners.</p>
             <button class="btn btn-skills">Learn more</button>
           </div>
-          <div class="skills__grid-item skills-writing">
+          <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="skills__grid-item skills-writing">
             <img src="./img/skills-writing.svg" alt="writing" class="img img-skills">
             <h3 class="h3-text">Writing</h3>
             <p class="p-text p-text-skills">One of the most important and extensive areas of natural science, the science that studies substances, also their composition </p>
             <button class="btn btn-skills">Learn more</button>
           </div>
-          <div class="skills__grid-item skills-reading">
+          <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="skills__grid-item skills-reading">
             <img src="./img/skills-reading.svg" alt="reading" class="img img-skills">
             <h3 class="h3-text">Reading</h3>
             <p class="p-text p-text-skills">perception and response actions of the user resulting from the use and/or upcoming use of the product, system or service</p>
             <button class="btn btn-skills">Learn more</button>
           </div>
-          <div class="skills__grid-item skills-listening">
+          <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="skills__grid-item skills-listening">
             <div class="skills-listening-flex-content">
               <h3 class="h3-text">Listening</h3>
               <p class="p-text p-text-skills">Here you can find activities to practiseyour  listening skills. Listening will help you to improve your understanding</p>
@@ -85,22 +86,22 @@
       </div>
     </section>
 
-    <section id="About_Us" class="About_Us none">
+    <section id="About_Us" class="About_Us">
       <div class="container">
         <div class="about__container">
           <div class="about__content">
             <h2 class="h2-text">About Us</h2>
             <p class="p-text p-text-about">The model offers a framework for discussing problems related to the user's experience, as well as possible ways and means of solving them. Application development begins at the top level (strategy), where the future software product is described quite abstractly from the point of view of the expectations of both users and the customer.</p>
             <div class="about__content-flex">
-              <div class="about__content-flex-item">
+              <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="about__content-flex-item">
                 <h2>800</h2>
                 <p>Pupils</p>
               </div>
-              <div class="about__content-flex-item">
+              <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="about__content-flex-item">
                 <h2>18</h2>
                 <p>Teachers</p>
               </div>
-              <div class="about__content-flex-item">
+              <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="about__content-flex-item">
                 <h2>6</h2>
                 <p>Foreign languages</p>
               </div>
@@ -113,45 +114,88 @@
       </div>
     </section>
 
-    <section class="Pricing">
+    <section id="Pricing" class="Pricing">
       <div class="container">
         <h2 class="h2-text-pricing">Pricing</h2>
         <div class="pricing__container">
-          <div class="pricing-item">
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500" class="pricing-item">
             <img src="./img/pricing-online.svg" alt="pricing-online">
             <h3>Self-study online course</h3>
             <p class="p-text-pricing">Start learning English online in live classes
               with qualified EC teachers and students 
               from all over the world.</p>
-            <div class="price">
-              <div class="price-number">£5.99</div>
-              <p>per month</p>
-            </div>
+            <a href="#!">
+              <div class="price">
+                <div class="price-number">£5.99</div>
+                <p>per month</p>
+              </div>
+            </a>
           </div>
-          <div class="pricing-item">
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="pricing-item">
             <img src="./img/pricing-lesson.svg" alt="pricing-lesson">
             <h3>Live online classes</h3>
             <p class="p-text-pricing">Interactive group classes with expert
               teachers. Free 7-day trial</p>
-            <div class="price">
-              <div class="price-number">£12.99</div>
-              <p>per month</p>
-            </div>
+            <a href="#!">
+              <div class="price">
+                <div class="price-number">£12.99</div>
+                <p>per month</p>
+              </div>
+            </a>
           </div>
-          <div class="pricing-item">
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2500" class="pricing-item">
             <img src="./img/pricing-webinar.svg" alt="pricing-webinar">
             <h3>Personal Tuition</h3>
             <p class="p-text-pricing">Online one-to-one English tutoring – enjoy
               our first session for only $1</p>
-            <div class="price">
-              <div class="price-number">£20.99</div>
-              <p>per month</p>
-            </div>
+            <a href="#!">
+              <div class="price">
+                <div class="price-number">£20.99</div>
+                <p>per month</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="Contact" class="Contact">
+      <div class="container">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="contact-content">
+          <div class="contact-img">
+            <img src="./img/contact-img.svg" alt="contact-business">
+          </div>
+          <div class="contact-title">
+            <h2 class="h2-text h2-text-contact">Contact Us</h2>
+            <p class="p-text p-text-contact">Discover your current English level by taking our free online English test.Sign up to our newsletter for learning tips and free resources</p>
+            <form class="contact-form" action="">
+              <input class="contact-input" type="email" placeholder="Enter Your E-mail">
+              <button class="btn contact-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
-  <footer></footer>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="line"></div>
+      <div class="footer-wrapper">
+        <a href="#!"><p class="logo"><span class="span__logo">Brit</span><span class="span__logo-next">lex</span></p></a>
+        <div class="footer-list">
+          <ul class="list">
+            <li><a href="#!">Terms and Conditions</a></li>
+            <li><a href="#!">Privacy Policy</a></li>
+            <li><a href="#!">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./script/main.js"></script>
 </body>
 </html>
