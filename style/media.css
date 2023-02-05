@@ -1,0 +1,110 @@
+@media screen and (max-width:992px) {
+  h1 {
+    font-size: 48px;
+    line-height: 64px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .container{
+    max-width: 870px;
+    padding: 0 30px;
+  }
+  .btn-header {
+    width: 236px;
+    height: 65px;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .btn-skills{
+    width: 196px;
+    height: 57px;
+  }
+  .p-text-header{
+    font-size: 20px;
+    line-height: 30px;  
+  }
+  .p-text-about {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .h1-text::after {
+    right: -40px;
+  }
+  .about__img img {
+    max-width: 336px;
+  }
+  .nav__header-items{
+    column-gap: 15px;
+  }
+  .header img {
+    max-width: 380px;
+  }
+  .pricing img {
+    max-width: 195px;
+  }
+}
+@media screen and (max-width:767px) {
+  .nav__header {
+    display: none;
+  }
+  .btn__header {
+    display: none;
+  }
+  .btn-header {
+    width: 236px;
+    height: 65px;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .p-text-about {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .p-text-header{
+    font-size: 16px;
+    line-height: 24px;  
+  }
+  .h1-text::after {
+    width: 40px;
+  }
+  .about__img img {
+    max-width: 290px;
+  }
+  .container{
+    max-width: 670px;
+    padding: 0 15px;
+  }
+  .header img {
+    max-width: 350px;
+  }
+  .pricing img {
+    max-width: 168px;
+  }
+}

@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="./style/media.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Britlex</title>
 </head>
@@ -16,6 +17,9 @@
           <a href="#!"><p class="logo"><span class="span__logo">Brit</span><span class="span__logo-next">lex</span></p></a>
         </div>
         <div class="header__menu">
+          <nav class="mobile-nav none">
+            <img src="./img/mobile-nav.svg" alt="burger">
+          </nav>
           <nav class="nav__header">
             <ul class="nav__header-items">
               <a href="#!"><li class="nav-item">Home</li></a>
@@ -26,18 +30,15 @@
             </ul>
           </nav>
         </div>
-        <div class="header__button">
-          <button class="btn__header">Let’s Talk</button>
-        </div>
+        <button class="btn__header">Let’s Talk</button>
       </div>
-      </div>
+    
 
-    <div class="header__content">
-      <div class="container">
+      <div class="header__content">
         <div class="header__inner">
           <div data-aos="fade-right" class="header__inner-title">
             <h1 class="h1-text">Learn <br> Any Foreign Language</h1>
-            <p class="p-text p-text-header">With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</p>
+            <p class="p-text p-text-header">With our teachers who write a program for each student, you will  be able to make your first sketch after the first lesson.</p>
             <button class="btn btn-header">Get started</button>
           </div>
           <div data-aos="fade-left" class="header__inner-image">
@@ -51,8 +52,8 @@
   <main>
 
     <section id="skills" class="skills">
-      <h2 class="h2-text h2-skills">Skills</h2>
       <div class="container">
+        <h2 class="h2-text h2-skills">Skills</h2>
         <div class="skills__grid">
           <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="skills__grid-item skills-speacking">
             <img src="./img/skills-speaking.svg" alt="speaking" class="img img-skills">
@@ -161,7 +162,7 @@
 
     <section id="Contact" class="Contact">
       <div class="container">
-        <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="contact-content">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="contact-content">
           <div class="contact-img">
             <img src="./img/contact-img.svg" alt="contact-business">
           </div>

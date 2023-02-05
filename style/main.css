@@ -6,7 +6,7 @@
   --color-text2: #263238;
   --color-text3: #8F95A5;
   --color-bacgroung-items: #F5F5F5;
-  --width-contaner:1370px;
+  --width-contaner: 1370px;
   --pading-container: 15px;
 }
 
@@ -44,7 +44,7 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 150px;
+  column-gap: 30px;
   margin-bottom: 115px;
 }
 .header__logo {
@@ -268,7 +268,7 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: end;
-  width: 33%;
+  width: 31%;
 }
 .pricing-item img{
   max-width: 340px;
@@ -323,6 +323,7 @@ p{
   color: var(--color-text3);
   padding-left: 33px;
   margin-right: 12px;
+  margin-bottom: 15px;
 }
 .contact-btn {
   width: 265px;
