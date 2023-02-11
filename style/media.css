@@ -1,4 +1,8 @@
 @media screen and (max-width:992px) {
+  .container{
+    max-width: 962px;
+    padding: 0 30px;
+  }
   h1 {
     font-size: 48px;
     line-height: 64px;
@@ -19,10 +23,6 @@
     line-height: 30px;  
     margin-bottom: 15px;
   }
-  .container{
-    max-width: 870px;
-    padding: 0 30px;
-  }
   .nav__header-items{
     column-gap: 26px;
   }
@@ -33,7 +33,8 @@
     font-size: 16px;
   }
   .header img {
-    max-width: 380px;
+    width: 100%;
+    height: auto;
   }
   .btn__header {
     font-size: 20px;
@@ -88,6 +89,10 @@
 
 
 @media screen and (max-width:767px) {
+  .container{
+    max-width: 737px;
+    padding: 0 15px;
+  }
   .nav__header,
   .btn__header,
   .h1-text::after {
@@ -128,7 +133,7 @@
     line-height: 20px;
   }
   .header img {
-    max-width: 290px;
+    width: 100%;
   }
   .skills__grid {
     display: grid;
@@ -155,10 +160,6 @@
   .about__content-flex h2 {
     line-height: 30px;
   }
-  .container{
-    max-width: 670px;
-    padding: 0 15px;
-  }
   .pricing img {
     max-width: 168px;
   }
@@ -178,7 +179,7 @@
 
 @media screen and (max-width:575px) {
   .container{
-    max-width: 530px;
+    max-width: 545px;
     padding: 0 15px;
   }
   .header__items,
