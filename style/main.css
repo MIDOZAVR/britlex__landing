@@ -44,7 +44,7 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 30px;
+  column-gap: 10px;
   margin-bottom: 115px;
 }
 .header__logo {
@@ -301,8 +301,11 @@ p{
 .contact-content {
   display: flex;
   justify-content: space-between;
-  column-gap: 110px;
   align-items: center;
+}
+.contact-img img {
+  width: 430px;
+  height: 450px;
 }
 .h2-text-contact {
   margin-bottom: 37px;
