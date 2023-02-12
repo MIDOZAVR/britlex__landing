@@ -1,8 +1,8 @@
 AOS.init();
 
 
-const btn = document.querySelectorAll('.btn')
-console.log(btn)
+const btn = document.querySelector('.burger')
+
 btn.onclick = function() {
-  console.log('message')
+  console.log('message');
 }
